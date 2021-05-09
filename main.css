@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: aliceblue;
+}
+
+h1 {
+  font-size: 5rem;
+  padding: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+h1 span {
+  color: #f55f44;
+}
+
+h4 {
+  color: #555;
+}
+
+.opening-soon {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.day, .hour, .minute, .second {
+  font-size: 3rem;
+}
+
+.queue {
+  height: 50vh;
+}
+
+.other {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.btn-container {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.btn-container a {
+  color: rgb(27, 132, 252);
+}
+
+.btn-container a:hover {
+  text-decoration: underline;
+}
+
+.btn-container a:before {
+  content: '←';
+}
+
+.other-1,
+.other-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.other-1 {
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background-color: #6c63ff;
+}
+
+p {
+  max-width: 25rem;
+  color: aliceblue;
+}
+
+.email-container {
+  /* font-size: 0 -- removes whitespace in browser */
+  font-size: 0;
+  margin-top: 1.5rem;
+}
+
+input,
+.btn-submit {
+  padding: .25rem 1rem;
+  color: #333;
+  border: 2px solid transparent;
+}
+
+input {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.btn-submit {
+  border-radius: 0 1rem 1rem 0;
+}
+
+input:focus,
+input:focus + .btn {
+  border: 2px solid #f55f44;
+  outline: none;
+}
+
+input:focus {
+  border-right: none;
+}
+
+input:focus + .btn {
+  border-left: none;
+}
+
